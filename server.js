@@ -9,7 +9,7 @@ http.listen(PORT, ()=> {
     console.log(`app running on this ${PORT}`)
 })
 
-app.use(express.static(__dirname + '/Public'))
+app.use(express.static(__dirname + '/docs'))
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/index.html')
